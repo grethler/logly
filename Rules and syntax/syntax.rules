@@ -1,0 +1,37 @@
+PYLOG uses OBJECTS
+------------------------------
+&this is a comment
+
+determination of statements
+should "" and '' be used?
+-----------
+OBJECT is !OBJECT,                      | "cat" is !"dog";
+
+OBJECT is OBJECT;                       | "cat" is "animal";
+
+OBJECT is OBJECT and OBJECT;            | "cat" is "animal" and "feline";
+
+OBJECT is OBJECT or OBJECT;             | "cat" is "dead" or "alive";          
+
+OBJECT will OBJECT if OBJECT;           | "cat" will "purr" if "kissed";
+
+OBJECT will OBJECT if !OBJECT;          | "cat" will "dead" if !"food";
+
+OBJECT or OBJECT is OBJECT;             | "cat" or "dog" is "pet";
+
+
+# ERRORS: 
+"X is !X";
+"X is !Y"; + "Y is X";
+"X is A or B;" + "X is X and B;"
+"F is D or C;" + "G is F;" and "L is G and D and C" 
+
+queries (is | can be)
+-----------
+is OBJECT OBJECT? (true/false)
+
+is OBJECT OBJECT and OBJECT? (true/false)
+
+is OBJECT OBJECT or OBJECT? (true/false)
+
+give OBJECT? (gives out all is ...)
