@@ -1,7 +1,3 @@
-//
-// Created by floriangrethler on 05.05.2023.
-//
-
 #include "CheckSyntax.h"
 #include <iostream>
 #include <string>
@@ -17,6 +13,7 @@ void CheckSyntax::testPrint(std::vector<std::string> line) {
     }
     std::cout << "}" << std::endl;
 }
+
 int CheckSyntax::checkSyntax(std::vector<std::string> line, int index) {
     bool error = false;
     int lsize = line.size();
@@ -33,7 +30,7 @@ int CheckSyntax::checkSyntax(std::vector<std::string> line, int index) {
         else if (line[0] == "if" and line[4] != "then") {
             if (line[3][0] == '(') {
                 int idx = 0;
-                for (const std::string entry: line) {
+                for (const std::string& entry: line) {
                     if (entry == "then") {
                         if (line[idx-1][line[idx-1].size()-1] != ')') {
                             std::cout << "SYNTAXERROR: Expected ')' in line " << index << "." << std::endl;
@@ -53,4 +50,5 @@ int CheckSyntax::checkSyntax(std::vector<std::string> line, int index) {
     if (error) {
         return 1;
     }
+    return 0;
 }

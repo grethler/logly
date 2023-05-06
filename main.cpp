@@ -2,14 +2,22 @@
 #include <iostream>
 
 std::string version = "dev";
+
 int main(int argc, char* argv[]) {
     Logly logly;
-    std::string arg1 = argv[1];
-    if (argc > 2) {
+    std::string arg1;
+    if (argc < 2) {
+        std::cout << "PARSINGERROR: Missing argument Loglyfile." << std::endl;
+        return 1;
+    }
+    else if (argc > 2) {
         std::cout << "PARSINGERROR: Too many arguments." << std::endl;
         return 1;
     }
-    else if (arg1 == "-h") {
+    else {
+        arg1 = argv[1];
+    }
+    if (arg1 == "-h") {
         std::cout << "-h\n--version" << std::endl;
         return 0;
     }
@@ -23,11 +31,11 @@ int main(int argc, char* argv[]) {
         return 0;
     }
     else {
-        if (arg1.rfind("-", 0) == 0) {
+        if (arg1.rfind('-', 0) == 0) {
             std::cout << "PARSINGERROR: Wrong arguments detected." << std::endl;
             return 1;
         }
-        std::cout << "FILEERROR: cannot open file." << std::endl;
+        std::cout << "FILEERROR: Can't open file." << std::endl;
         return 1;
     }
 }

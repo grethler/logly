@@ -15,6 +15,7 @@ std::vector<std::string> Logly::split(const std::string& s, char delim) {
     }
     return result;
 }
+
 void Logly::parseFile() {
     std::string line;
     std::ifstream loglyfile(filename);

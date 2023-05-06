@@ -1,0 +1,4 @@
+animal is (!human and !dog);
+feline is animal;
+alive is !dead;
+cat is (feline and alive);
