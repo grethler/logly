@@ -26,8 +26,6 @@ void Logly::parseFile() {
                 if (pos != std::string::npos) {
                     key = line.substr(0, pos);
                     value = line.substr(pos + 4);
-                    // remove ';'
-                    value = value.substr(0, value.size()-1);
                 }
                 std::unordered_map<std::string, std::string> dict = {{key, value}};
                 CheckSyntax::testPrint(dict);
@@ -38,7 +36,7 @@ void Logly::parseFile() {
     loglyfile.close();
 }
 
-bool Logly::endsWith(std::string const& str, std::string const& suffix) {
+bool Logly::endsWith(const std::string &str, const std::string &suffix) {
     if (str.length() < suffix.length()) {
         return false;
     }

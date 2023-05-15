@@ -8,5 +8,5 @@ public:
     std::string line;
     std::string filename;
     void parseFile();
-    static bool endsWith(std::string const& str, std::string const& suffix);
+    static bool endsWith(const std::string &str, const std::string &suffix);
 };
