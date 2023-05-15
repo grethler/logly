@@ -1,10 +1,10 @@
 #pragma once
 
 #include <string>
-#include <vector>
+#include <unordered_map>
 
 class CheckSyntax {
 public:
-    static void testPrint(std::vector<std::string> line);
-    static int checkSyntax(std::vector<std::string> line, int index);
+    static void testPrint(std::unordered_map<std::string, std::string> line);
+    static int checkLine(std::string line, int index);
 };
