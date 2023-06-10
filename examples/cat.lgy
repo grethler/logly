@@ -1,4 +1,4 @@
-animal is (!human and !dog);
+animal is !human;
 feline is animal;
 alive is !dead;
 cat is (feline and alive);
