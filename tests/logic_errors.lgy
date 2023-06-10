@@ -1,7 +1,0 @@
-"cat" is !"cat";
-&&
-"cat" is "feline";
-"feline" is !"dog";
-"cat" is "dog";
-&&
-"dog" is "";

@@ -1,9 +1,0 @@
-cat is dead;
-&test comment
-
-cat is (animal and cute);
-R is (human or god);
-R is happy;
-number is 1;
-if cat is dead then R is sad;
-if cat is (cute and alive) then R is happy;

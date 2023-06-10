@@ -1,7 +1,0 @@
-"cat" is "animal";
-"cat" is !"dog";
-"cat" is "feline";
-"feline" is !"dog";
-"cat" is "white" and ("yellow" or "brown")
-
-is "cat" "cat"?

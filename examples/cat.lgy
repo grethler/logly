@@ -1,4 +1,6 @@
-animal is !human;
-feline is animal;
-alive is !dead;
-cat is (feline and alive);
+"animal" is !"human";
+"feline" is "animal";
+"cat" is !"dead"
+& The following line gives true as output if asked: is "cat" "alive"?
+if VAR is !"dead" then VAR is "alive";
+"cat" is ("feline" and "alive");
