@@ -1,3 +1,4 @@
+# Statements
 Comment syntax:
 ```
 & This is a comment
@@ -34,7 +35,7 @@ Implication:
 ```
 if "cat" is "animal" then "cat" is !"human";
 ```
-
+# Queries
 The following queries are possible:
 ```
 - is "cat" "animal"?
