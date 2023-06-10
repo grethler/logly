@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
         arg1 = argv[1];
     }
     if (arg1 == "-h") {
-        std::cout << "-h\n--version" << std::endl;
+        std::cout << "-h\n--version\nLoglyfile" << std::endl;
         return 0;
     }
     else if (arg1 == "--version") {
