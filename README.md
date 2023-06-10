@@ -12,7 +12,7 @@ Atoms: (quotation)
 ```
 Variables: (uppercase only, no quotation)
 ```
-VAR
+if VAR is "number" then VAR is !"letter";
 ```
 The following statements are possible:
 ```
@@ -24,11 +24,11 @@ Negation:
 ```
 Conjunction:
 ```
-"cat" is ("animal" and C);
+"cat" is ("animal" and "alive");
 ```
 Disjunction
 ```
-"cat" is ("animal" or C);
+OBJECT is ("dead" or "alive");
 ```
 Implication:
 ```
@@ -37,7 +37,10 @@ if "cat" is "animal" then "cat" is !"human";
 
 The following queries are possible:
 ```
-is cat animal?              (checks if ... is ...)
-is cat?                     (checks if ... exists)
-give cat?                   (returns all ... is ...)
+- is "cat" "animal?"
+yes
+```
+```
+- is "cat"?
+yes
 ```
