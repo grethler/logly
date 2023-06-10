@@ -37,10 +37,12 @@ if "cat" is "animal" then "cat" is !"human";
 
 The following queries are possible:
 ```
-- is "cat" "animal?"
-yes
+- is "cat" "animal"?
+true
+- is "cat" "human"?
+false
 ```
 ```
 - is "cat"?
-yes
+true
 ```
