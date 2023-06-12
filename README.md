@@ -11,8 +11,13 @@ Atoms: (quotation)
 ```
 "......"
 ```
-Variables: (uppercase only, no quotation)
+Variables (no quotation and not a number):
 ```
+VAR is "cat";
+```
+Recursion:
+```
+VAR is "number";
 if VAR is "number" then VAR is !"letter";
 ```
 The following statements are possible:
