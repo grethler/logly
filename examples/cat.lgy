@@ -1,6 +1,7 @@
 "animal" is !"human";
 "feline" is "animal";
-"cat" is !"dead"
+"cat" is !"dead";
 & The following line gives true as output if asked: is "cat" "alive"?
+VAR is "cat";
 if VAR is !"dead" then VAR is "alive";
 "cat" is ("feline" and "alive");
